@@ -1,0 +1,47 @@
+.custom-cursor {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  pointer-events: none;
+  user-select: none;
+  overflow: hidden;
+  visibility: hidden;
+}
+.custom-cursor * { pointer-events: none; }
+.custom-cursor-dot,
+.custom-cursor-ring,
+.custom-cursor-trail {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+}
+.custom-cursor-dot,
+.custom-cursor-trail {
+  width: 5px;
+  height: 5px;
+  background: var(--tile);
+}
+.custom-cursor-dot {
+  box-shadow: 0 0 8px rgba(43, 179, 174, 0.6);
+}
+.custom-cursor-trail { opacity: 0; }
+.custom-cursor-ring {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(43, 179, 174, 0.6);
+  box-shadow: 0 0 10px rgba(43, 179, 174, 0.08);
+  transition: border-color 0.18s ease, box-shadow 0.18s ease;
+}
+.custom-cursor.is-interactive .custom-cursor-ring {
+  border-color: rgba(43, 179, 174, 0.9);
+  box-shadow: 0 0 15px rgba(43, 179, 174, 0.22), inset 0 0 9px rgba(43, 179, 174, 0.07);
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .custom-cursor.is-visible { visibility: visible; }
+  html.custom-cursor-active,
+  html.custom-cursor-active * { cursor: none; }
+}
+@media (prefers-reduced-motion: reduce), (hover: none), (pointer: coarse) {
+  .custom-cursor { display: none; }
+}
