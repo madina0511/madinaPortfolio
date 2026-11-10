@@ -335,7 +335,6 @@ export default function App() {
         <section id="work" className="section">
           <div className="section-head">
             <h2>{t.workTitle}</h2>
-            <p>{t.workIntro}</p>
           </div>
           <ol className="timeline">
             {JOBS.map((j) => {

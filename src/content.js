@@ -369,7 +369,6 @@ export const T = {
     skillsIntro: '실제 프로젝트에서 써 보고 운영해 본 도구만 적었습니다.',
     cats: { ai: 'AI 및 머신러닝', frontend: '프론트엔드', backend: '백엔드 및 API', database: '데이터베이스 및 캐싱', devops: 'DevOps 및 클라우드' },
     workTitle: '경력',
-    workIntro: '우즈베키스탄과 말레이시아에서 웹·모바일 애플리케이션과 백엔드 시스템을 개발했습니다.',
     present: '현재',
     jobs: {
       webkelajak: {
@@ -462,7 +461,6 @@ export const T = {
     skillsIntro: "Only tools I've used and run in real projects.",
     cats: { ai: 'AI & Machine Learning', frontend: 'Frontend', backend: 'Backend & APIs', database: 'Database & Caching', devops: 'DevOps & Cloud' },
     workTitle: 'Experience',
-    workIntro: 'Web and mobile application development and backend engineering across Uzbekistan and Malaysia.',
     present: 'Present',
     jobs: {
       webkelajak: {
@@ -555,7 +553,6 @@ export const T = {
     skillsIntro: "Faqat real loyihalarda ishlatgan va yuritgan vositalarim.",
     cats: { ai: 'AI va mashinaviy o‘rganish', frontend: 'Frontend', backend: 'Backend va API', database: 'Ma’lumotlar bazasi va keshlash', devops: 'DevOps va bulut' },
     workTitle: 'Tajriba',
-    workIntro: 'O‘zbekiston va Malayziyada veb va mobil ilovalar hamda backend tizimlarini ishlab chiqish tajribasi.',
     present: 'Hozir',
     jobs: {
       webkelajak: {
