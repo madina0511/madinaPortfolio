@@ -278,8 +278,20 @@ export default function App() {
               <span className="name-full">Madina Burieva</span>
             </h1>
             <p className="role">{t.role}</p>
-            <p className="hero-specialty">{t.heroSpecialty} · {t.location}</p>
-            <p className="summary">{t.summary}</p>
+            <p className="hero-specialty">{t.heroSpecialty}</p>
+            <div className="summary">
+              {t.summary.split('\n\n').map(paragraph => (
+                <p key={paragraph}>
+                  {t.heroHighlights.reduce((parts, phrase) => parts.flatMap(part =>
+                    typeof part === 'string'
+                      ? part.split(phrase).flatMap((text, index) => index === 0
+                        ? [text]
+                        : [<strong key={phrase}>{phrase}</strong>, text])
+                      : [part]
+                  ), [paragraph])}
+                </p>
+              ))}
+            </div>
             <div className="actions">
               <a className="btn btn-solid" href={CONTACT.cv} download>
                 {Icon.download}{t.cv}
