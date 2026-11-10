@@ -10,7 +10,7 @@ export const CONTACT = {
   telegram: '', // masalan: 'tina_dev' (@ belgisisiz)
   github: 'madina0511',
   linkedin: '', // masalan: 'https://www.linkedin.com/in/...'
-  cv: `${import.meta.env.BASE_URL}cv.pdf`, // public/cv.pdf; respects Vite's deployment base
+  cv: `${import.meta.env.BASE_URL}images/cv.pdf`, // public/images/cv.pdf; respects Vite's deployment base
   // Forma uchun: Formspree/o'z backend URL'i. Bo'sh bo'lsa, email ilovasi ochiladi.
   formEndpoint: import.meta.env.VITE_CONTACT_ENDPOINT || '',
 }
